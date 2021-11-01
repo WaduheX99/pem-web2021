@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir PPDB Jalur Zonasi Tahun 2020</title>    
+</head>
+<body>
+    <h2><center>Formulir Pendaftaran PPDB Jalur Zonasi 2020</h2></center>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <font face="Times New Roman" size="4"></font>
+    <form action="proses.php" method="post">
+        <table border="0" align="center">
+            <tr>
+                <td><b>INFO PENDAFTARAN</b></td>
+            </tr>
+
+            <tr>
+                <td>NISN</td>
+                <td>:</td>
+                <td><input placeholder="Masukkan 10 digit nomor NISN Anda" min="0" type="number" onKeyPress="if(this.value.length==10) return false;" /></td>
+            </tr>
+
+            <tr>
+                <td>Asal Sekolah</td>
+                <td>:</td>
+                <td><input type="text" name="asalSekolah"></td>
+            </tr>
+
+            <tr>
+                <td>Tahun Lulus</td>
+                <td>:</td>
+                <td><input type="number" min="2015" max="2020" name="tahunLulus"></td>
+            </tr>
+
+            <tr>
+                <td><b>DATA CALON PESERTA</b></td>
+            </tr>
+
+            <tr>
+                <td>Nama Lengkap</td>
+                <td>:</td>
+                <td><input type="text" name="namalengkap"></td>
+            </tr>
+            
+            <tr>
+                <td>NIK</td>
+                <td>:</td>
+                <td><input placeholder="Masukkan 16 digit nomor NIK Anda" min="0" type="number" onKeyPress="if(this.value.length==16) return false;" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td>:</td>
+                <td>
+                    <select id="agama" name="agama">
+                        <option value="pilih">--Pilih Agama--</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="khatolik">Khatolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="konghucu">Konghucu</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tempat Lahir</td>
+                <td>:</td>
+                <td><input type="text" name="tempatLahir"></td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td><input type="date" name="tanggalLahir"></td>
+            </tr>
+            
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td><input type="radio" name="pilihan" value="Laki-laki">Laki-laki
+                    <input type="radio" name="pilihan" value="Perempuan">Perempuan
+                    <input type="radio" name="pilihan" value="Lainnya">Lainnya
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>:</td>
+                <td><textarea name="alamat"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Desa/Kelurahan</td>
+                <td>:</td>
+                <td><input type="text" name="desa/kelurahan"></td>
+            </tr>
+
+            <tr>
+                <td>Kecamatan</td>
+                <td>:</td>
+                <td><input type="text" name="kecamatan"></td>
+            </tr>
+
+            <tr>
+                <td>Kota/Kabupaten</td>
+                <td>:</td>
+                <td><input type="text" name="kota/kabupaten"></td>
+            </tr>
+
+            <tr>
+                <td>Provinsi</td>
+                <td>:</td>
+                <td><input type="text" name="provinsi"></td>
+            </tr>
+
+            <tr>
+                <td>Email Aktif</td>
+                <td>:</td>
+                <td><input type="email" name="emailAktif"></td>
+            </tr>
+
+            <tr>
+                <td><b>DATA ORANG TUA</b></td>
+            </tr>
+
+            <tr>
+                <td>Nomor Kartu Keluarga</td>
+                <td>:</td>
+                <td><input placeholder="Masukkan 16 digit nomor KK Anda" min="0" type="number" onKeyPress="if(this.value.length==16) return false;" /></td>
+            </tr>
+
+            <tr>
+                <td>Nama Ayah Kandung</td>
+                <td>:</td>
+                <td><input type="text" name="namaAyahKandung"></td>
+            </tr>
+
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td>:</td>
+                <td>
+                    <select id="agama" name="agama">
+                        <option value="pilih">--Pilih Agama--</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="khatolik">Khatolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="konghucu">Konghucu</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pekerjaan</td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaan"></td>
+            </tr>
+
+            <tr>
+                <td>Nama Ibu Kandung</td>
+                <td>:</td>
+                <td><input type="text" name="namaIbuKandung"></td>
+            </tr>
+            
+            <tr>
+                <td><label for="agama">Agama</label></td>
+                <td>:</td>
+                <td>
+                    <select id="agama" name="agama">
+                        <option value="pilih">--Pilih Agama--</option>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="khatolik">Khatolik</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="buddha">Buddha</option>
+                        <option value="konghucu">Konghucu</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pekerjaan</td>
+                <td>:</td>
+                <td><input type="text" name="pekerjaan"></td>
+            </tr>
+
+            <tr>
+                <td>Alamat Orang Tua</td>
+                <td>:</td>
+                <td><textarea name="alamatOrangTua"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Desa/Kelurahan</td>
+                <td>:</td>
+                <td><input type="text" name="desa/kelurahan"></td>
+            </tr>
+
+            <tr>
+                <td>Kecamatan</td>
+                <td>:</td>
+                <td><input type="text" name="kecamatan"></td>
+            </tr>
+
+            <tr>
+                <td>Kota/Kabupaten</td>
+                <td>:</td>
+                <td><input type="text" name="kota/kabupaten"></td>
+            </tr>
+
+            <tr>
+                <td>Provinsi</td>
+                <td>:</td>
+                <td><input type="text" name="provinsi"></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="left">
+                <input type="submit" name="submit" value="Kirim">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+</html>
